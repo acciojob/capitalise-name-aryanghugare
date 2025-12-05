@@ -1,8 +1,8 @@
 //your JS code here. If required.
 let input = document.querySelector("#fname")
 
-input.addEventListener("focus",(e)=>{
+input.addEventListener("blur",(e)=>{
 	e.preventDefault()
-	input.value = e.target.value.toUpperCase()  ;
+	input.value = input.value.toUpperCase()  ;
 	
 })
